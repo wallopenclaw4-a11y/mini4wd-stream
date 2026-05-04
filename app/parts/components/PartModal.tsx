@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 // TODO: Implement PartModal - popup with bilingual name, audio, animation
 export default function PartModal({ part, onClose }: { part: string; onClose: () => void }) {
-  console.log('PartModal:', part)
   return (
     <motion.div
       initial={{ scale: 0.8, opacity: 0 }}

@@ -2,7 +2,6 @@
 
 // TODO: Implement ExplodedView - long-press overlay showing parts separation
 export default function ExplodedView({ parts, onClose }: { parts: string[]; onClose: () => void }) {
-  console.log('ExplodedView for parts:', parts)
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
       <p className="text-white text-2xl">Exploded View</p>

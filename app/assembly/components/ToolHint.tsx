@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 // TODO: Implement ToolHint - bouncing arrow indicating which tool to use
 export default function ToolHint({ tool }: { tool: string }) {
-  console.log('ToolHint:', tool)
   return (
     <motion.div
       animate={{ y: [0, -10, 0] }}

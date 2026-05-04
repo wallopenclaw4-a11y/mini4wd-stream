@@ -1,11 +1,22 @@
 'use client'
 
-// TODO: Implement ColorPicker - row of color buttons
+const COLORS = [
+  '#FF6B6B', // red
+  '#4ECDC4', // teal
+  '#FFE66D', // yellow
+  '#45B7D1', // blue
+  '#96CEB4', // green
+  '#F38181', // pink
+  '#AA96DA', // purple
+  '#FCBAD3', // light pink
+  '#2C3E50', // black/dark
+  '#DFE6E9', // white/silver
+]
+
 export default function ColorPicker({ selected, onSelect }: { selected: string; onSelect: (c: string) => void }) {
-  const colors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#F38181', '#A8E6CF', '#DDA0DD', '#87CEEB']
   return (
     <div className="flex gap-3 flex-wrap justify-center">
-      {colors.map(c => (
+      {COLORS.map(c => (
         <button
           key={c}
           onClick={() => onSelect(c)}
