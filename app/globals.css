@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-noto-sans-hk), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  touch-action: manipulation;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
